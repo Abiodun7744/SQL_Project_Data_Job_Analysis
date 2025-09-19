@@ -23,4 +23,4 @@ FROM top_paying_jobs t
 INNER JOIN skills_job_dim sjd ON t.job_id = sjd.job_id
 INNER JOIN skills_dim sd ON sjd.skill_id = sd.skill_id
 ORDER BY 
-      salary_year_avg
+      salary_year_avg DESC
